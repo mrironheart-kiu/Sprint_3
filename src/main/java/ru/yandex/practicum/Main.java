@@ -2,8 +2,6 @@ package ru.yandex.practicum;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,12 +28,8 @@ public class Main {
         farmAnimals.addAnimal(Animal.COW);
         farmAnimals.addAnimal("Петрович");
 
-        HashMap<Animal, Integer> countedAnimals = farmAnimals.countedAnimals();
-        Set<String> uniqueNames = farmAnimals.uniqueNames();
-
-        System.out.println(countedAnimals);
-        System.out.println(uniqueNames);
+        System.out.println(farmAnimals.countedAnimals());
+        System.out.println(farmAnimals.uniqueNames());
         System.out.println(farmAnimals);
-
     }
 }

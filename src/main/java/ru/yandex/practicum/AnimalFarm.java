@@ -63,12 +63,13 @@ public class AnimalFarm {
     public void addAnimal(Animal animalType, String name){
         farmAnimals.add(animalType.name() + " " + name);
     }
+
     /**
      * Задание №3
      * Метод добавляет в коллекцию животное по типу животного.
      */
-    public void addAnimal(Animal animalType){
-        farmAnimals.add(animalType.name() + " N");
+    public void addAnimal(Animal animal){
+        farmAnimals.add(animal.name() + " N");
     }
     /**
      * Задание №3
@@ -88,10 +89,6 @@ public class AnimalFarm {
                 .replaceAll("[\\[\\]]","")
                 .replace(", ", "\n");
     }
-
-    /*
-     * Вспомогательные методы
-     */
 
     /**
      * Вспомогательный метод.
